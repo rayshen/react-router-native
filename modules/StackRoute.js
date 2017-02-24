@@ -8,7 +8,7 @@ import {
 } from './RouteUtils';
 import { defaultStackRouteReducer } from './ReducerUtils';
 import { notImplemented, component } from './PropTypes';
-import { HORIZONTAL_CARD_STACK } from './transitionRegistry';
+import { HORIZONTAL_CARD_STACK,HORIZONTAL_PAGER } from './transitionRegistry';
 
 type Props = {
   component: ReactClass<any>,
@@ -44,7 +44,7 @@ class StackRoute extends Component<any, Props, any> {
   static defaultProps = {
     reducer: defaultStackRouteReducer,
     routeType: STACK_ROUTE,
-    transition: HORIZONTAL_CARD_STACK,
+    transition: HORIZONTAL_PAGER,
   };
 
   props: Props;

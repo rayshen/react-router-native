@@ -115,6 +115,7 @@ addHandler(
 addHandler(
   HORIZONTAL_PAGER,
   NavigationPagerStyleInterpolator.forHorizontal,
+  NavigationCardStackPanResponder.forHorizontal
 );
 
 addHandler(
